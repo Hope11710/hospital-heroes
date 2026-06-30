@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nurse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1> Meet Nurse Maya</h1>
+
+<p>I help take care of kids every day.</p>
+
+<button onclick="showInfo('help')">Things I Help With</button>
+
+<button onclick="showInfo('tools')">My Tools</button>
+
+<button onclick="showInfo('fun')">Fun Fact</button>
+
+<div id="popup" class="popup hidden" onclick="closePopup(event)">
+    <div id="popupContent" onclick="event.stopPropagation()"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
