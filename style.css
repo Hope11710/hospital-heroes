@@ -1,6 +1,11 @@
 body {
-    background-color: #eef7ff;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        180deg,
+        #dfefff,
+        #eef7ff,
+        #f9fbff 
+        );
+    font-family: "Trebuchet MS", "Verdana", sans-serif;
     text-align: center;
     margin-top: 60px;
 }
@@ -16,17 +21,27 @@ p {
 }
 
 button {
-    background-color: #6C63FF;
-    color: white;
-    font-size: 24px;
-    border: none;
-    padding: 18px 40px;
-    border-radius: 18px;
-    cursor: pointer;
+   width:100%;
+   margin:15px 0;
+   padding:20px;
+
+   border:none;
+   border-radius:18px;
+
+   background:#6C63FF;
+   color:white;
+
+   font-size:22px;
+   font-weight:bold;
+
+   cursor:pointer;
+
+   transition: 0.25s;
 }
 
 button:hover {
-    background-color:#5a52d6;
+    background-color:#564bd9;
+    transform: translateY(-3px);
 }
 
 .popup {
@@ -53,15 +68,6 @@ button:hover {
     display: none;
 }
 
-.card {
-    background: white;
-    width: 600px;
-    margin: 40px auto;
-    padding: 40px;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
 h2{
     color:#6C63FF;
 }
@@ -80,8 +86,7 @@ h2{
     margin-bottom: 35px;
 }
 
-button {
-    display: block;
-    width: 100%;
-    margin: 18px 0;
+.character-placeholder {
+    font-size:110px;
+    margin: 25px 0;
 }
