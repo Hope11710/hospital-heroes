@@ -7,12 +7,14 @@ body {
         );
     font-family: "Trebuchet MS", "Verdana", sans-serif;
     text-align: center;
-    margin-top: 60px;
+    margin: 0;
+    padding: 50px 20px;
 }
 
 h1 {
     color: #4b6cb7;
     font-size: 52px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -78,7 +80,7 @@ h2{
     margin: 50px auto;
     padding: 40px;
     border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
 }
 
 .intro {
@@ -89,4 +91,34 @@ h2{
 .character-placeholder {
     font-size:110px;
     margin: 25px 0;
+}
+
+.info-card {
+    background: #ffffff;
+    border-radius: 20px; 
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    border-color: #6C63FF;
+}
+
+.info-card h2 {
+    margin: 0 0 10px 0;
+    color: #6C63FF;
+    font-size: 28px;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
 }
