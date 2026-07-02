@@ -1,8 +1,12 @@
 function showPopup(text) {
     const popup = document.getElementById("popup");
     const content = document.getElementById("popupContent");
+    
+    content.innerHTML = text + `
+        <br><br>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    `;
 
-    popup.innerHTML = text;
     popup.classList.remove("hidden");
 }
 
@@ -15,7 +19,6 @@ function showInfo(type) {
             Check how you're feeling<br>
             Help you feel safe
             <br><br>
-            <small>Tap anywhere to close</small>
         `);
     }
 
@@ -34,9 +37,9 @@ function showInfo(type) {
             Nurses are one of the most important parts of a hospital team!
         `);
     }
+}
 
-    function closePopup(event) {
+ function closePopup() {
         const popup = document.getElementById("popup");
         popup.classList.add("hidden");
-    }
 }

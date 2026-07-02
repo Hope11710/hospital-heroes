@@ -52,3 +52,16 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.card {
+    background: white;
+    width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#6C63FF;
+}

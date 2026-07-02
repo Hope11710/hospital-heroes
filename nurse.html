@@ -18,8 +18,12 @@
 
 <button onclick="showInfo('fun')">Fun Fact</button>
 
-<div id="popup" class="popup hidden" onclick="closePopup(event)">
-    <div id="popupContent" onclick="event.stopPropagation()"></div>
+<div id="popup" class="popup hidden" onclick="closePopup()">
+    
+    <div id="popupContent" class="popup-content" onclick="event.stopPropagation()">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
