@@ -65,3 +65,23 @@ button:hover {
 h2{
     color:#6C63FF;
 }
+
+.card {
+    background: white;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.intro {
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 18px 0;
+}
